@@ -19,7 +19,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.jsx?$/, loaders: ['react-hot', 'jsx?harmony'], include: path.join(__dirname +　'/001.basic/', 'src') },
+            { test: /\.jsx?$/, loaders: ['react-hot','babel'], include: path.join(__dirname +　'/001.basic/', 'src') },
             { test: /\.jsx{0,1}$/, loaders: ['babel']}
         ]
     },
