@@ -1,16 +1,15 @@
-import React from 'react';
-import { render } from 'react-dom';
-import Todos from './Todos.jsx';
-import { Provider } from 'react-redux';
-import store from './redux';
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import todoApp from './reducers'
+import App from './components/App'
 
-const root = (
-  <Provider store={store} key="provider">
-    <Todos />
-  </Provider>
-);
+let store = createStore(todoApp)
 
 render(
-  root,
-  document.getElementById('app')
-);
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
