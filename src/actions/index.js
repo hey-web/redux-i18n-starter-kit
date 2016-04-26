@@ -7,6 +7,13 @@ export const addTodo = (text) => {
   }
 }
 
+export const dropTodo = (id) => {
+  return {
+    type: 'DROP_TODO',
+    id
+  }
+}
+
 export const setVisibilityFilter = (filter) => {
   return {
     type: 'SET_VISIBILITY_FILTER',

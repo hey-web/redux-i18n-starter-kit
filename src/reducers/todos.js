@@ -27,6 +27,9 @@ const todos = (state = [], action) => {
         ...state,
         todo(undefined, action)
       ]
+    case 'DROP_TODO':
+      let dropIndex = state.findIndex((v, i)=> { return v.id === action.id })
+      return state.slice(0, dropIndex).concat( state.slice(dropIndex + 1))
     case 'TOGGLE_TODO':
       return state.map(t =>
         todo(t, action)
