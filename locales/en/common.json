@@ -1,0 +1,17 @@
+{
+  "appName": "redux + i18next starter-kit",
+  "author": "author",
+  "authorName": "Remind Wang",
+  "dashboard":{
+  	"body":{
+  		"drop":"Drop",
+  		"add":"Add"
+  		},
+	"footer":{
+		"show":"Show",
+		"all":"All",
+		"active":"Active",
+		"completed":"Completed"
+	}
+  }
+}

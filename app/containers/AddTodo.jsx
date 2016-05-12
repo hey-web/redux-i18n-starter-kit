@@ -1,8 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
+import { translate } from 'react-i18next'
 
-let AddTodo = ({ dispatch }) => {
+let AddTodo = ({ dispatch, t }) => {
   let input
 
   return (
@@ -19,12 +20,12 @@ let AddTodo = ({ dispatch }) => {
           input = node
         }} />
         <button type="submit">
-          Add Todo
+          {t('dashboard.body.add')}
         </button>
       </form>
     </div>
   )
 }
-AddTodo = connect()(AddTodo)
+AddTodo = connect()(translate('common')(AddTodo))
 
 export default AddTodo

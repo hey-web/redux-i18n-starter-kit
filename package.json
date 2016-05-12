@@ -14,8 +14,13 @@
   "author": "wangpin",
   "license": "MIT",
   "dependencies": {
+    "i18next": "^3.1.0",
+    "i18next-browser-languagedetector": "^0.3.0",
+    "i18next-localstorage-cache": "^0.3.0",
+    "i18next-xhr-backend": "^0.5.4",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
+    "react-i18next": "^1.4.1",
     "react-redux": "^4.4.5",
     "redux": "^3.4.0"
   },
@@ -23,6 +28,7 @@
     "babel": "^6.5.2",
     "babel-eslint": "^6.0.2",
     "babel-loader": "^6.2.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-es2015-arrow-functions": "^6.5.2",
     "babel-preset-es2015": "^6.6.0",
     "babel-preset-react": "^6.5.0",

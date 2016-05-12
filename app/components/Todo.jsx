@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react'
+import { translate } from 'react-i18next'
 
-const Todo = ({ onClick, onDrop, completed, text }) => (
+const Todo = ({ onClick, onDrop, completed, text, t }) => (
   <li>
     <span
     onClick={onClick}
@@ -12,7 +13,7 @@ const Todo = ({ onClick, onDrop, completed, text }) => (
     >
     {text}
     </span>
-    <button onClick={onDrop}>Drop</button>
+    <button onClick={onDrop}>{t('dashboard.body.drop')}</button>
   </li>
 )
 
@@ -23,4 +24,4 @@ Todo.propTypes = {
   text: PropTypes.string.isRequired
 }
 
-export default Todo
+export default translate('common')(Todo)

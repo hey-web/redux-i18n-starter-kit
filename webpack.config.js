@@ -5,13 +5,12 @@ var path = require('path');
 module.exports = {
     devtool: 'sourcemap',
     entry: [
-        //entry1: './001.basic/src/index',
         'webpack-dev-server/client?http://0.0.0.0:3000', // WebpackDevServer host and port
         'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
-        './src/index' // Your appʼs entry point
+        './app/index' // Your appʼs entry point
     ],
     output: {
-        path: path.join(__dirname , './build'),
+        path: __dirname,
         filename: 'bundle.js'
     },
     resolve: {
@@ -19,7 +18,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.jsx?$/, loaders: ['react-hot','babel'], include: path.join(__dirname, 'src') },
+            { test: /\.jsx?$/, loaders: ['react-hot','babel'], include: path.join(__dirname, 'app') },
             { test: /\.jsx{0,1}$/, loaders: ['babel']}
         ]
     },
