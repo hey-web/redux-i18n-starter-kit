@@ -24,7 +24,7 @@ There are two important dirs you need to know.
 
 	This dir contains all codes about busincess logic
    
-   ### app/index.jsx
+   #### app/index.jsx
    This file is the app entry, it is necessary to add **i18n** provider, and also, the i18n instance.
    ```javascript
     //i18n stuff start
@@ -46,7 +46,7 @@ There are two important dirs you need to know.
     )
    ```
    
-   ### app/i18n.js
+   #### app/i18n.js
    This file export the i18n instance which can provide to react component as a prop.
    **Note**: I have added a custome language detector to control the languge detection. It will always return **en** as the language. You can commented it to see the real behavior. Or just modify the return value to other locales.
    ```
@@ -68,7 +68,7 @@ There are two important dirs you need to know.
    ```
    
    
-   ### app/components/Header.jsx
+   #### app/components/Header.jsx
    This is the most simplest component which has i18n support. It imports translate function, and the t function in props. **common** is a namespace which you want refered, it is mapped to a same name json file in the locale dir. Here it is mapped to the common.json.
    
    ```
@@ -86,7 +86,8 @@ There are two important dirs you need to know.
    ```
    
 ### locales
-	This dir contains all locales data. Every locale has its own dir named as locale word like en-US, zh-CN. And under each of locale dir, there is a json file named common.json. This is the default data file.
+
+This dir contains all locales data. Every locale has its own dir named as locale word like en-US, zh-CN. And under each of locale dir, there is a json file named common.json. This is the default data file.
 
 [localhost:3000/](http://localhost:3000/)
 
