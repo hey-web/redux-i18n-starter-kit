@@ -18,6 +18,8 @@ npm start
 
 Open link in your modern browser, recommend Chrome.
 
+[localhost:3000/](http://localhost:3000/)
+
 ## Introduce those source
 There are two important dirs you need to know.
 ### app
@@ -89,7 +91,6 @@ There are two important dirs you need to know.
 
 This dir contains all locales data. Every locale has its own dir named as locale word like en-US, zh-CN. And under each of locale dir, there is a json file named common.json. This is the default data file.
 
-[localhost:3000/](http://localhost:3000/)
 
 ## References
 * [i18next](https://github.com/i18next/i18next)
