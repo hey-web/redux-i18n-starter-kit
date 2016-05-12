@@ -7,11 +7,13 @@
   		"drop":"Drop",
   		"add":"Add"
   		},
-	"footer":{
-		"show":"Show",
-		"all":"All",
-		"active":"Active",
-		"completed":"Completed"
-	}
-  }
+  	"footer":{
+  		"show":"Show",
+  		"all":"All",
+  		"active":"Active",
+  		"completed":"Completed"
+  	}
+  },
+  "interpolateSample": "you can interpolate {{value}} or {{component}} via interpolate component!",
+  "placeholderSample":"My Name is {{name}}"
 }

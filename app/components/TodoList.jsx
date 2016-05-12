@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react'
 import Todo from './Todo'
 
 const TodoList = ({ todos, onTodoClick, onTodoDrop }) => (
+  <section>
   <ul>
     {todos.map(todo =>
       <Todo
@@ -12,6 +13,7 @@ const TodoList = ({ todos, onTodoClick, onTodoDrop }) => (
       />
     )}
   </ul>
+  </section>
 )
 
 TodoList.propTypes = {
