@@ -26,7 +26,7 @@ There are two important dirs you need to know.
 
 	This dir contains all codes about busincess logic
    
-   #### app/index.jsx
+#### app/index.jsx
    This file is the app entry, it is necessary to add **i18n** provider, and also, the i18n instance.
    ```javascript
     //i18n stuff start
@@ -48,7 +48,7 @@ There are two important dirs you need to know.
     )
    ```
    
-   #### app/i18n.js
+#### app/i18n.js
    This file export the i18n instance which can provide to react component as a prop.
    **Note**: I have added a custome language detector to control the languge detection. It will always return **en** as the language. You can commented it to see the real behavior. Or just modify the return value to other locales.
    ```
