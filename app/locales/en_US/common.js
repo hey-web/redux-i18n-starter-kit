@@ -1,4 +1,4 @@
-{
+const common = {
   "appName": "redux + i18next starter-kit",
   "author": "author",
   "authorName": "Remind Wang",
@@ -16,4 +16,8 @@
   },
   "interpolateSample": "you can interpolate {{value}} or {{component}} via interpolate component!",
   "placeholderSample":"My Name is {{name}}"
+}
+
+export default {
+    common
 }

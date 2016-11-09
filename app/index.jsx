@@ -9,7 +9,6 @@ import App from './components/App'
 import { I18nextProvider } from 'react-i18next'; // as we build ourself via webpack
 import i18n from './i18n'
 
-
 let store = createStore(todoApp)
 
 render(
@@ -19,6 +18,6 @@ render(
       <App />
     </I18nextProvider>
   </Provider>,
- 
+
   document.getElementById('root')
 )

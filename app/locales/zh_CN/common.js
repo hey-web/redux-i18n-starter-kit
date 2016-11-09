@@ -1,4 +1,4 @@
-{
+const common = {
   "appName": "redux + i18next starter-kit",
   "author": "作者",
   "authorName": "王品",
@@ -14,4 +14,8 @@
 		"completed":"已完成"
 	}
   }
+}
+
+export default {
+    common
 }
