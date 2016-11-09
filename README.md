@@ -70,7 +70,7 @@ There are two important dirs you need to know.
    ```
    
    
-   #### app/components/Header.jsx
+#### app/components/Header.jsx
    This is the most simplest component which has i18n support. It imports translate function, and the t function in props. **common** is a namespace which you want refered, it is mapped to a same name json file in the locale dir. Here it is mapped to the common.json.
    
    ```
