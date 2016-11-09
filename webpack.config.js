@@ -14,12 +14,13 @@ module.exports = {
         filename: 'bundle.js'
     },
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js', '.jsx', 'json']
     },
     module: {
         loaders: [
             { test: /\.jsx?$/, loaders: ['react-hot','babel'], include: path.join(__dirname, 'app') },
-            { test: /\.jsx{0,1}$/, loaders: ['babel']}
+            { test: /\.jsx{0,1}$/, loaders: ['babel']},
+            { test: /\.json$/, loader: 'json'}
         ]
     },
     plugins: [commonsPlugin,new webpack.HotModuleReplacementPlugin( {hot: true} )]
