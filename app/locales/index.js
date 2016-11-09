@@ -1,6 +1,6 @@
 const res = {
-    'en-US': require('./en_US/common.json'),
-    'zh-CN': require('./zh_CN/common.json')
+    'en-US': require('./en-US.json'),
+    'zh-CN': require('./zh-CN.json')
 }
 
 export default res
